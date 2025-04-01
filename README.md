@@ -55,6 +55,7 @@ shiny::runApp("App.R")
 Utilisez les champs dédiés dans l'interface pour importer vos fichiers CSV.
 
 Pour les fichiers datamatrix : La première ligne doit répertorier les noms des features. La première colonne, intitulée sample_name, doit contenir le nom des échantillons.
+
 Pour le fichier metadata : La première colonne doit lister le nom des échantillons. Les colonnes suivantes représentent les différentes sous-classes.
 
 Attention, la colonne sample_name doit être identique dans tous fichiers
