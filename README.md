@@ -30,38 +30,35 @@ Analyses Multiblocks Interactives est une application interactive développée e
 
    ```bash
    git clone [<URL_DU_REPO>](https://github.com/axellebourez/AnalysesMultiblockInteractives)
-   Ouvrir le projet dans RStudio.
-
+    ```
 2. **Installer les packages :**
 Dans R, exécutez le code suivant :
-
-r
-Copier
+ ```bash
 install.packages(c("shiny", "shinydashboard", "data.table", "ggplot2",
                    "reshape2", "ropls", "mixOmics", "MBAnalysis", "dplyr",
                    "plotly", "ggrepel", "openxlsx", "ConsensusOPLS",
                    "RVAideMemoire", "abind", "visNetwork", "igraph"))
+ ```
                    
 2. **Lancer l'application :**
 Dans RStudio, ouvrez le script principal et exécutez :
+```bash
 
-r
-Copier
 shiny::runApp("App.R")
-
+ ```
 
 ## Utilisation 
 
-Chargement des données :
+**Chargement des données :**
 Utilisez les champs dédiés dans l'interface pour importer vos fichiers CSV.
 
-Sélection de l'analyse :
+**Sélection de l'analyse :**
 Parcourez les différents onglets pour lancer l'analyse souhaitée (PCA, PLS‑DA, OPLS, etc.).
 
-Interactivité :
+**Interactivité:**
 Explorez les graphiques interactifs et ajustez les paramètres selon vos besoins.
 
-Exportation des résultats :
+**Exportations des résultats :**
 Téléchargez vos résultats au format Excel pour les partager ou les conserver.
 
 ## Contributions
