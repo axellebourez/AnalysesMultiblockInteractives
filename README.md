@@ -16,11 +16,13 @@ Analyses Multiblocks Interactives est une application interactive développée e
 - **Import de données :** Chargez facilement vos fichiers CSV pour les données protéomiques, métabolomiques et les metadata.
 - **Prétraitement :** Nettoyage et normalisation des données pour une analyse optimale.
 - **Analyses multivariées :**
-  - **PCA** pour l'exploration des structures de données.
-  - **PLS‑DA** et **OPLS** pour la classification et la discrimination.
-  - **Block PLS‑DA** pour l'analyse conjointe de plusieurs jeux de données.
-  - **PLS Regression** et **PLS Canonical** pour l'analyse de régression.
-  - **ComDim** et **Consensus OPLS** pour des approches complémentaires.
+  - **PCA**
+  - **PLS‑DA** et **OPLS** .
+  - **PLS Regression** et **PLS Canonical** .
+  - **ComDim**
+  - **Block PLS‑DA**
+  - **Réseau de corrélation interactif** : Sur base des données Block PLSDA
+  - **Consensus OPLS**
 - **Visualisations interactives :** Graphiques dynamiques réalisés avec ggplot2 et plotly.
 - **Exportation :** Export des résultats d'analyse en fichiers Excel pour une utilisation ultérieure.
 
@@ -52,6 +54,11 @@ shiny::runApp("App.R")
 **Chargement des données :**
 Utilisez les champs dédiés dans l'interface pour importer vos fichiers CSV.
 
+Pour les fichiers datamatrix : La première ligne doit répertorier les noms des features. La première colonne, intitulée sample_name, doit contenir le nom des échantillons.
+Pour le fichier metadata : La première colonne doit lister le nom des échantillons. Les colonnes suivantes représentent les différentes sous-classes.
+
+Attention, la colonne sample_name doit être identique dans tous fichiers
+
 **Sélection de l'analyse :**
 Parcourez les différents onglets pour lancer l'analyse souhaitée (PCA, PLS‑DA, OPLS, etc.).
 
@@ -59,7 +66,7 @@ Parcourez les différents onglets pour lancer l'analyse souhaitée (PCA, PLS‑D
 Explorez les graphiques interactifs et ajustez les paramètres selon vos besoins.
 
 **Exportations des résultats :**
-Téléchargez vos résultats au format Excel pour les partager ou les conserver.
+Téléchargez vos résultats au format Excel.
 
 ## Contributions
 Les contributions et suggestions sont les bienvenues !
